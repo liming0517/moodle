@@ -26,6 +26,7 @@
         "url": "http://example.com/link"
     }
 }}
+<!--action_menu_link-->
 {{^disabled}}
     <a href="{{url}}" class="{{classes}}" {{#attributes}}{{name}}={{#quote}}{{value}}{{/quote}} {{/attributes}}{{#showtext}}aria-labelledby="actionmenuaction-{{instance}}"{{/showtext}}>{{#icon}}{{#pix}}{{key}}, {{component}}, {{title}}{{/pix}}{{/icon}}{{#showtext}}<span class="menu-action-text" id="actionmenuaction-{{instance}}">{{{text}}}</span>{{/showtext}}</a>
 {{/disabled}}

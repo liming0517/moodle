@@ -36,7 +36,30 @@
             <div class="card-body {{^contextheader}}p-2{{/contextheader}}">
                 <div class="d-flex">
                     {{#contextheader}}
+                        <script type="application/javascript">
+                            $(function () {
+                                $(".dropdown-item a").hide();
+                                //取出a标签中的href属性
 
+                                   /* var a_href= $(".dropdown-item  a").attr("href");*/
+                                    var array = $('.dropdown-item a');
+                                 /*   var href_array = [];*/
+                                    for(let i = 0;i<array.length;i++){
+                                    // href_array.push($(array[i]).attr('href'));
+                                        let href =$(array[i]).attr('href');
+                                   console.log("href="+$(array[i]).attr('href'));
+                                   if(href.match("view.php")!=null){
+                                       console.log("href中有edit.php");
+                                       $(array[i]).show();
+                                   }
+                                };
+
+        /*                        if(a_href.match("edit.php")!=null){
+                                    console.log("href中有edit.php")
+                                    $(".dropdown-item").show();
+                                }*/
+                            }) ;
+                        </script>
                         <!--标头设置-->
                     <div class="mr-auto">
                         {{{contextheader}}}

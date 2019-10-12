@@ -51,6 +51,8 @@
         "text": "This is an action link"
     }
 }}
+<!--action_link-->
+
 {{^disabled}}
     <a href="{{{url}}}" id="{{id}}" class="{{classes}}" {{#attributes}} {{name}}={{#quote}}{{value}}{{/quote}} {{/attributes}}>{{#icon}}{{#pix}}{{key}}, {{component}}, {{title}}{{/pix}}{{/icon}}{{{text}}}</a>
     {{#hasactions}}
@@ -58,5 +60,6 @@
     {{/hasactions}}
 {{/disabled}}
 {{#disabled}}
+    <!--spanssss-->
     <span class="currentlink {{classes}}" {{#attributes}} {{name}}={{#quote}}{{value}}{{/quote}} {{/attributes}}>{{#icon}}{{#pix}}{{key}}, {{component}}, {{title}}{{/pix}}{{/icon}}{{{text}}}</span>
 {{/disabled}}
