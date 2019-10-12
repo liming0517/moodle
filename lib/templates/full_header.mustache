@@ -36,7 +36,8 @@
             <div class="card-body {{^contextheader}}p-2{{/contextheader}}">
                 <div class="d-flex">
                     {{#contextheader}}
-                        <script type="application/javascript">
+                        <!--使用js控制菜单展示-->
+<!--                        <script type="application/javascript">
                             $(function () {
                                 $(".dropdown-item a").hide();
                                 //取出a标签中的href属性
@@ -59,17 +60,18 @@
                                     $(".dropdown-item").show();
                                 }*/
                             }) ;
-                        </script>
+                        </script>-->
                         <!--标头设置-->
-                    <div class="mr-auto">
+                    <div class="mr-auto" style="width: 60%">
                         {{{contextheader}}}
                     </div>
                     {{/contextheader}}
 
                     {{#settingsmenu}}
-                    <div class="context-header-settings-menu">
-                        {{{settingsmenu}}}
-                    </div>
+                        <!--更改 不显示课程中的设置图标-->
+<!--                    <div class="context-header-settings-menu">
+                        {{!{settingsmenu}}}
+                    </div>-->
                     {{/settingsmenu}}
                 </div>
                 <!--编辑课程-->
@@ -80,6 +82,7 @@
            <!--     <div style="position: absolute;right: 200px;top:30px">
                     <a style="font-size: 20px" href="http://192.168.111.23:8081/moodle/course/view.php?id=7&sesskey=bXZjV4Z25x&edit=off" id="action_link5d9fe689bbda622" class="" role="menuitem"><i class="icon fa fa-pencil fa-fw " style="font-size: 10px"  aria-hidden="true"></i>关闭课程编辑</a>
                 </div>-->
+                <!--hjhjh-->
                 <div class="d-flex flex-wrap">
                     {{#hasnavbar}}
                     <div id="page-navbar">
