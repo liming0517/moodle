@@ -37,7 +37,7 @@ $(function() {
 		"type":"get",
 	    "success":function() {
             console.log("回调成功");
-						location.href ="http://localhost:8083/index.jsp";
+						location.href = "http://localhost:8083/index.jsp";
 						},
 	    "error":function() {
 	        console.log("访问失败");

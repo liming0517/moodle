@@ -1,7 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3911875e-4b13-467d-a2c5-5f9f46037693" name="Default Changelist" comment="" />
+    <list default="true" id="3911875e-4b13-467d-a2c5-5f9f46037693" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notice.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/course/view.php" beforeDir="false" afterPath="$PROJECT_DIR$/course/view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/navigationlib.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/navigationlib.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/templates/action_menu.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/lib/templates/action_menu.mustache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/templates/action_menu_trigger.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/lib/templates/action_menu_trigger.mustache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/templates/custom_menu_item.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/lib/templates/custom_menu_item.mustache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/templates/full_header.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/lib/templates/full_header.mustache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/templates/navbar.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/lib/templates/navbar.mustache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/templates/popover_region.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/lib/templates/popover_region.mustache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/tests/configonlylib_test.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/tests/configonlylib_test.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/tests/weblib_format_text_test.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/tests/weblib_format_text_test.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/yui/src/widget-focusafterclose/meta/notification.json" beforeDir="false" afterPath="$PROJECT_DIR$/lib/yui/src/widget-focusafterclose/meta/notification.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/message/tests/api_test.php" beforeDir="false" afterPath="$PROJECT_DIR$/message/tests/api_test.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mod/forum/classes/local/renderers/discussion.php" beforeDir="false" afterPath="$PROJECT_DIR$/mod/forum/classes/local/renderers/discussion.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mod/forum/classes/local/renderers/discussion_list.php" beforeDir="false" afterPath="$PROJECT_DIR$/mod/forum/classes/local/renderers/discussion_list.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mod/forum/templates/discussion_favourite_toggle.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/mod/forum/templates/discussion_favourite_toggle.mustache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mod/forum/templates/discussion_lock_toggle.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/mod/forum/templates/discussion_lock_toggle.mustache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mod/forum/templates/discussion_pin_toggle.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/mod/forum/templates/discussion_pin_toggle.mustache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mod/forum/templates/forum_action_menu.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/mod/forum/templates/forum_action_menu.mustache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mod/forum/view.php" beforeDir="false" afterPath="$PROJECT_DIR$/mod/forum/view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mod/test/amd/build/validation.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mod/test/amd/src/validation.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mod/test/backup/moodle1/lib.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mod/test/backup/moodle2/backup_survey_activity_task.class.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mod/test/backup/moodle2/backup_survey_stepslib.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mod/test/backup/moodle2/restore_survey_activity_task.class.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mod/test/backup/moodle2/restore_survey_stepslib.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mod/test/classes/analytics/indicator/activity_base.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mod/test/classes/analytics/indicator/cognitive_depth.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mod/test/classes/analytics/indicator/social_breadth.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mod/test/classes/event/course_module_instance_list_viewed.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mod/test/classes/event/course_module_viewed.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mod/test/classes/event/report_downloaded.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mod/test/classes/event/report_viewed.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mod/test/classes/event/response_submitted.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mod/test/classes/external.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mod/test/classes/privacy/provider.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mod/test/classes/search/activity.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mod/test/download.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mod/test/graph.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mod/test/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/mod/test/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mod/test/lib.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mod/test/mod_form.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mod/test/report.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mod/test/save.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mod/test/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/theme/academi/layout/frontpage.php" beforeDir="false" afterPath="$PROJECT_DIR$/theme/academi/layout/frontpage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/theme/academi/layout/secure.php" beforeDir="false" afterPath="$PROJECT_DIR$/theme/academi/layout/secure.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/theme/academi/templates/maintenance.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/theme/academi/templates/maintenance.mustache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/theme/boost/templates/flat_navigation.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/theme/boost/templates/flat_navigation.mustache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/theme/boost/templates/nav-drawer.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/theme/boost/templates/nav-drawer.mustache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/theme/boost/templates/secure.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/theme/boost/templates/secure.mustache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/theme/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/theme/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/lib.php" beforeDir="false" afterPath="$PROJECT_DIR$/user/lib.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,6 +71,9 @@
     <execution>
       <executable />
     </execution>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="JsFlowSettings">
     <service-enabled>true</service-enabled>
@@ -30,9 +91,10 @@
   <component name="PhpXdebugProxy" ide_key="phpStorm" host="localhost" port="80" />
   <component name="ProjectId" id="1RDRyyhmpswiJ5tihkRrqGIHwaF" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.buildTools.grunt.grunt-cli.package" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/mod/test" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.stylelint" value="true" />
@@ -46,13 +108,13 @@
     <property name="settings.editor.selected.configurable" value="settings.php.debug.servers" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\moodle\mod" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\moodle\mod\test" />
       <recent name="C:\xampp\htdocs\moodle\mod" />
       <recent name="C:\xampp\htdocs\moodle\lang\zh_cn_utf8" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\moodle\mod" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -71,7 +133,7 @@
     <configuration default="true" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" server_name="Unnamed">
       <method v="2" />
     </configuration>
-    <configuration name="calendar" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" server_name="testDebug" start_url="/moodle/calendar/view.php">
+    <configuration name="calendar" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" server_name="testDebug" start_url="/moodle/course/view.php?id=7">
       <method v="2" />
     </configuration>
     <configuration default="true" type="js.build_tools.grunt">
@@ -99,10 +161,29 @@
       <workItem from="1569717839905" duration="12489000" />
       <workItem from="1569804357341" duration="10573000" />
       <workItem from="1570495415106" duration="11717000" />
+      <workItem from="1570583626363" duration="23142000" />
+      <workItem from="1570668557272" duration="24013000" />
+      <workItem from="1570754862137" duration="12351000" />
+      <workItem from="1570771822031" duration="8131000" />
+      <workItem from="1570784103073" duration="2010000" />
+      <workItem from="1570840706293" duration="3619000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

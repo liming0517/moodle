@@ -241,6 +241,12 @@
     }
 
     $PAGE->set_heading($course->fullname);
+    echo '     <div  style="position: absolute;right: 500px;top:220px">
+                    <a style="font-size: 20px" href="http://192.168.111.23:8081/wiseschool/course/view.php?id=7&amp;sesskey=bXZjV4Z25x&amp;edit=on" id="action_link5d9fe689bbda622" class="" role="menuitem"><i class="icon fa fa-pencil fa-fw " style="font-size: 10px"  aria-hidden="true"></i>开始课程编辑</a>
+                </div>';
+    echo '     <div style="position: absolute;right: 250px;top:220px">
+                    <a style="font-size: 20px" href="http://192.168.111.23:8081/wiseschool/course/view.php?id=7&sesskey=bXZjV4Z25x&edit=off" id="action_link5d9fe689bbda622" class="" role="menuitem"><i class="icon fa fa-pencil fa-fw " style="font-size: 10px"  aria-hidden="true"></i>关闭课程编辑</a>
+                </div>';
     echo $OUTPUT->header();
 
     if ($USER->editing == 1 && !empty($CFG->enableasyncbackup)) {

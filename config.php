@@ -21,7 +21,7 @@ $CFG->dboptions = array (
   'dbcollation' => 'utf8mb4_unicode_ci',
 );
 
-$CFG->wwwroot   = 'http://192.168.111.23:8081/moodle';
+$CFG->wwwroot   = 'http://192.168.111.23:8081/wiseschool';
 $CFG->dataroot  = 'C:\\xampp\\moodledata';
 $CFG->admin     = 'admin';
 

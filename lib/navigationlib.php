@@ -1209,7 +1209,7 @@ class global_navigation extends navigation_node {
             $properties = array(
                 'key' => 'home',
                 'type' => navigation_node::TYPE_SYSTEM,
-                'text' => get_string('home'),
+                'text' => '课程总览',
                 'action' => new moodle_url('/'),
                 'icon' => new pix_icon('i/home', '')
             );
@@ -2766,7 +2766,8 @@ class global_navigation extends navigation_node {
 
         //Participants
         if ($navoptions->participants) {
-            $participants = $coursenode->add(get_string('participants'), new moodle_url('/user/index.php?id='.$course->id),
+            //修改 隐藏成员菜单
+          /*  $participants = $coursenode->add(get_string('participants'), new moodle_url('/user/index.php?id='.$course->id),
                 self::TYPE_CONTAINER, get_string('participants'), 'participants', new pix_icon('i/users', ''));
 
             if ($navoptions->blogs) {
@@ -2781,27 +2782,29 @@ class global_navigation extends navigation_node {
 
             if ($navoptions->notes) {
                 $participants->add(get_string('notes', 'notes'), new moodle_url('/notes/index.php', array('filtertype' => 'course', 'filterselect' => $course->id)), self::TYPE_SETTING, null, 'currentcoursenotes');
-            }
-        } else if (count($this->extendforuser) > 0 || $this->page->course->id == $course->id) {
+            }*/
+        } /*else if (count($this->extendforuser) > 0 || $this->page->course->id == $course->id) {
             $participants = $coursenode->add(get_string('participants'), null, self::TYPE_CONTAINER, get_string('participants'), 'participants');
-        }
+        }*/
 
         // Badges.
         if ($navoptions->badges) {
-            $url = new moodle_url('/badges/view.php', array('type' => 2, 'id' => $course->id));
+            //修改 隐藏勋章菜单
+          /*  $url = new moodle_url('/badges/view.php', array('type' => 2, 'id' => $course->id));
 
             $coursenode->add(get_string('coursebadges', 'badges'), $url,
                     navigation_node::TYPE_SETTING, null, 'badgesview',
-                    new pix_icon('i/badge', get_string('coursebadges', 'badges')));
+                    new pix_icon('i/badge', get_string('coursebadges', 'badges')));*/
         }
 
         // Check access to the course and competencies page.
         if ($navoptions->competencies) {
-            // Just a link to course competency.
+            //修改 隐藏能力菜单
+     /*       // Just a link to course competency.
             $title = get_string('competencies', 'core_competency');
             $path = new moodle_url("/admin/tool/lp/coursecompetencies.php", array('courseid' => $course->id));
             $coursenode->add($title, $path, navigation_node::TYPE_SETTING, null, 'competencies',
-                    new pix_icon('i/competencies', ''));
+                    new pix_icon('i/competencies', ''));*/
         }
         if ($navoptions->grades) {
             $url = new moodle_url('/grade/report/index.php', array('id'=>$course->id));
@@ -2879,7 +2882,8 @@ class global_navigation extends navigation_node {
         }
 
         if ($navoptions->calendar) {
-            $courseid = $COURSE->id;
+            /*修改  隐藏日程管理界面*/
+          /*  $courseid = $COURSE->id;
             $params = array('view' => 'month');
             if ($courseid != $SITE->id) {
                 $params['course'] = $courseid;
@@ -2889,17 +2893,18 @@ class global_navigation extends navigation_node {
             $calendarurl = new moodle_url('/calendar/view.php', $params);
             $node = $coursenode->add(get_string('calendar', 'calendar'), $calendarurl,
                 self::TYPE_CUSTOM, null, 'calendar', new pix_icon('i/calendar', ''));
-            $node->showinflatnavigation = true;
+            $node->showinflatnavigation = true;*/
         }
 
         if (isloggedin()) {
             $usercontext = context_user::instance($USER->id);
             if (has_capability('moodle/user:manageownfiles', $usercontext)) {
-                $url = new moodle_url('/user/files.php');
+                /*修改 隐藏私人文件*/
+               /* $url = new moodle_url('/user/files.php');
                 $node = $coursenode->add(get_string('privatefiles'), $url,
                     self::TYPE_SETTING, null, 'privatefiles', new pix_icon('i/privatefiles', ''));
                 $node->display = false;
-                $node->showinflatnavigation = true;
+                $node->showinflatnavigation = true;*/
             }
         }
 
@@ -4018,7 +4023,8 @@ class flat_navigation extends navigation_node_collection {
         }
 
         // Add-a-block in editing mode.
-        if (isset($this->page->theme->addblockposition) &&
+        //修改 隐藏添加一个版块的菜单
+/*        if (isset($this->page->theme->addblockposition) &&
                 $this->page->theme->addblockposition == BLOCK_ADDBLOCK_POSITION_FLATNAV &&
                 $PAGE->user_is_editing() && $PAGE->user_can_edit_blocks() &&
                 ($addable = $PAGE->blocks->get_addable_blocks())) {
@@ -4035,7 +4041,7 @@ class flat_navigation extends navigation_node_collection {
             }
             $params = array('blocks' => $blocks, 'url' => '?' . $url->get_query_string(false));
             $PAGE->requires->js_call_amd('core/addblockmodal', 'init', array($params));
-        }
+        }*/
     }
 
 

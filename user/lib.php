@@ -892,16 +892,18 @@ function user_get_user_navigation_info($user, $page, $options = array()) {
     }
 
     // Links: Dashboard.
-    $myhome = new stdClass();
+    //修改 隐藏个人主页
+/*    $myhome = new stdClass();
     $myhome->itemtype = 'link';
     $myhome->url = new moodle_url('/my/');
     $myhome->title = get_string('mymoodle', 'admin');
     $myhome->titleidentifier = 'mymoodle,admin';
     $myhome->pix = "i/dashboard";
-    $returnobject->navitems[] = $myhome;
+    $returnobject->navitems[] = $myhome;*/
 
     // Links: My Profile.
-    $myprofile = new stdClass();
+    //修改 隐藏个人档案
+/*    $myprofile = new stdClass();
     $myprofile->itemtype = 'link';
     $myprofile->url = new moodle_url('/user/profile.php', array('id' => $user->id));
     $myprofile->title = get_string('profile');
@@ -909,18 +911,19 @@ function user_get_user_navigation_info($user, $page, $options = array()) {
     $myprofile->pix = "i/user";
     $returnobject->navitems[] = $myprofile;
 
-    $returnobject->metadata['asotherrole'] = false;
+    $returnobject->metadata['asotherrole'] = false;*/
 
     // Before we add the last items (usually a logout + switch role link), add any
     // custom-defined items.
-    $customitems = user_convert_text_to_menu_items($CFG->customusermenuitems, $page);
+    // 隐藏
+/*    $customitems = user_convert_text_to_menu_items($CFG->customusermenuitems, $page);
     foreach ($customitems as $item) {
         $returnobject->navitems[] = $item;
-    }
+    }*/
 
 
     if ($returnobject->metadata['asotheruser'] = \core\session\manager::is_loggedinas()) {
-        $realuser = \core\session\manager::get_realuser();
+       /* $realuser = \core\session\manager::get_realuser();
 
         // Save values for the real user, as $user will be full of data for the
         // user the user is disguised as.
@@ -941,7 +944,7 @@ function user_get_user_navigation_info($user, $page, $options = array()) {
         $userrevert->pix = "a/logout";
         $userrevert->title = get_string('logout');
         $userrevert->titleidentifier = 'logout,moodle';
-        $returnobject->navitems[] = $userrevert;
+        $returnobject->navitems[] = $userrevert;*/
 
     } else {
 
@@ -977,7 +980,8 @@ function user_get_user_navigation_info($user, $page, $options = array()) {
         }
     } else {
         // Build switch role link.
-        $roles = get_switchable_roles($context);
+        // 修改 隐藏切换角色到....
+/*        $roles = get_switchable_roles($context);
         if (is_array($roles) && (count($roles) > 0)) {
             $switchrole = new stdClass();
             $switchrole->itemtype = 'link';
@@ -990,7 +994,7 @@ function user_get_user_navigation_info($user, $page, $options = array()) {
             $switchrole->title = get_string('switchroleto');
             $switchrole->titleidentifier = 'switchroleto,moodle';
             $returnobject->navitems[] = $switchrole;
-        }
+        }*/
     }
 
     return $returnobject;

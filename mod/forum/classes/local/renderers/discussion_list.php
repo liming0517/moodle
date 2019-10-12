@@ -251,7 +251,8 @@ class discussion_list {
             'inpagereply' => true,
             'edit' => 0
         );
-        $posturl = new \moodle_url('/mod/forum/post.php');
+  /*      $posturl = new \moodle_url('/mod/forum/post.php');*/
+        $posturl = 'http://192.168.111.23:8083/index.php';
         $mformpost = new \mod_forum_post_form($posturl, $formparams, 'post', '', array('id' => 'mformforum'));
         $discussionsubscribe = \mod_forum\subscriptions::get_user_default_subscription($forumrecord, $coursecontext, $cm, null);
 

@@ -38,7 +38,7 @@ class core_weblib_format_text_testcase extends advanced_testcase {
         $this->resetAfterTest();
         filter_set_global_state('emoticon', TEXTFILTER_ON);
         $this->assertRegExp('~^<p><img class="icon emoticon" alt="smile" title="smile" ' .
-                'src="https://www.example.com/moodle/theme/image.php/_s/boost/core/1/s/smiley" /></p>$~',
+                'src="https://www.example.com/wiseschool/theme/image.php/_s/boost/core/1/s/smiley" /></p>$~',
                 format_text('<p>:-)</p>', FORMAT_HTML));
     }
 

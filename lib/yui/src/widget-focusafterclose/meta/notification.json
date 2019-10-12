@@ -1,5 +1,5 @@
 {
-    "moodle-core-widget-focusafterclose": {
+    "wiseschool-core-widget-focusafterclose": {
         "requires": [
             "base-build",
             "widget"

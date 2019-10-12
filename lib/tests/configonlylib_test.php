@@ -93,21 +93,21 @@ class core_configonlylib_testcase extends advanced_testcase {
         global $CFG;
 
         $this->resetAfterTest();
-        $this->assertEquals('https://www.example.com/moodle', $CFG->wwwroot);
+        $this->assertEquals('https://www.example.com/wiseschool', $CFG->wwwroot);
 
         $_SERVER = array();
         $_SERVER['SERVER_SOFTWARE'] = 'Apache/2.2.22 (Unix)';
         $_SERVER['QUERY_STRING'] = 'theme=standard&component=core&rev=5&image=u/f1';
-        $_SERVER['REQUEST_URI'] = '/moodle/theme/image.php?theme=standard&component=core&rev=5&image=u/f1';
-        $_SERVER['SCRIPT_NAME'] = '/moodle/theme/image.php';
+        $_SERVER['REQUEST_URI'] = '/wiseschool/theme/image.php?theme=standard&component=core&rev=5&image=u/f1';
+        $_SERVER['SCRIPT_NAME'] = '/wiseschool/theme/image.php';
         $this->assertSame('', min_get_slash_argument());
 
         $_SERVER = array();
         $_SERVER['SERVER_SOFTWARE'] = 'Apache/2.2.22 (Unix)';
         $_SERVER['QUERY_STRING'] = '';
-        $_SERVER['REQUEST_URI'] = '/moodle/theme/image.php/standard/core/5/u/f1';
+        $_SERVER['REQUEST_URI'] = '/wiseschool/theme/image.php/standard/core/5/u/f1';
         $_SERVER['PATH_INFO'] = '/standard/core/5/u/f1';
-        $_SERVER['SCRIPT_NAME'] = '/moodle/theme/image.php';
+        $_SERVER['SCRIPT_NAME'] = '/wiseschool/theme/image.php';
         $_GET = array();
         $this->assertSame('/standard/core/5/u/f1', min_get_slash_argument());
 
@@ -115,9 +115,9 @@ class core_configonlylib_testcase extends advanced_testcase {
         $_SERVER = array();
         $_SERVER['SERVER_SOFTWARE'] = 'Microsoft-IIS/7.0';
         $_SERVER['QUERY_STRING'] = '';
-        $_SERVER['REQUEST_URI'] = '/moodle/theme/image.php/standard/core/5/u/f1';
+        $_SERVER['REQUEST_URI'] = '/wiseschool/theme/image.php/standard/core/5/u/f1';
         $_SERVER['PATH_INFO'] = '/standard/core/5/u/f1';
-        $_SERVER['SCRIPT_NAME'] = '/moodle/theme/image.php';
+        $_SERVER['SCRIPT_NAME'] = '/wiseschool/theme/image.php';
         $_GET = array();
         $this->assertSame('/standard/core/5/u/f1', min_get_slash_argument());
 
@@ -125,9 +125,9 @@ class core_configonlylib_testcase extends advanced_testcase {
         $_SERVER = array();
         $_SERVER['SERVER_SOFTWARE'] = 'Microsoft-IIS/7.0';
         $_SERVER['QUERY_STRING'] = 'file=/standard/core/5/u/f1';
-        $_SERVER['REQUEST_URI'] = '/moodle/theme/image.php/standard/core/5/u/f1';
+        $_SERVER['REQUEST_URI'] = '/wiseschool/theme/image.php/standard/core/5/u/f1';
         $_SERVER['PATH_INFO'] = '/';
-        $_SERVER['SCRIPT_NAME'] = '/moodle/theme/image.php';
+        $_SERVER['SCRIPT_NAME'] = '/wiseschool/theme/image.php';
         $_GET = array();
         $_GET['file'] = '/standard/core/5/u/f1';
         $this->assertSame('/standard/core/5/u/f1', min_get_slash_argument());
@@ -135,18 +135,18 @@ class core_configonlylib_testcase extends advanced_testcase {
         $_SERVER = array();
         $_SERVER['SERVER_SOFTWARE'] = 'Weird server';
         $_SERVER['QUERY_STRING'] = '';
-        $_SERVER['REQUEST_URI'] = '/moodle/theme/image.php/standard/core/5/u/f1';
-        $_SERVER['PATH_INFO'] = '/moodle/theme/image.php/standard/core/5/u/f1';
-        $_SERVER['SCRIPT_NAME'] = '/moodle/theme/image.php';
+        $_SERVER['REQUEST_URI'] = '/wiseschool/theme/image.php/standard/core/5/u/f1';
+        $_SERVER['PATH_INFO'] = '/wiseschool/theme/image.php/standard/core/5/u/f1';
+        $_SERVER['SCRIPT_NAME'] = '/wiseschool/theme/image.php';
         $_GET = array();
         $this->assertSame('/standard/core/5/u/f1', min_get_slash_argument());
 
         $_SERVER = array();
         $_SERVER['SERVER_SOFTWARE'] = 'Hacker server';
         $_SERVER['QUERY_STRING'] = '';
-        $_SERVER['REQUEST_URI'] = '/moodle/theme/image.php/standard/core/5/u/f1';
-        $_SERVER['PATH_INFO'] = '/moodle/theme/image.php/standard\\core/..\\../5/u/f1';
-        $_SERVER['SCRIPT_NAME'] = '/moodle/theme/image.php';
+        $_SERVER['REQUEST_URI'] = '/wiseschool/theme/image.php/standard/core/5/u/f1';
+        $_SERVER['PATH_INFO'] = '/wiseschool/theme/image.php/standard\\core/..\\../5/u/f1';
+        $_SERVER['SCRIPT_NAME'] = '/wiseschool/theme/image.php';
         $_GET = array();
         // Windows dir separators are removed, multiple ... gets collapsed to one .
         $this->assertSame('/standardcore/./5/u/f1', min_get_slash_argument());

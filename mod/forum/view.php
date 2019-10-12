@@ -42,14 +42,19 @@ $pageno = optional_param('p', $pageno, PARAM_INT);
 $pagesize = optional_param('s', 0, PARAM_INT);
 $sortorder = optional_param('o', null, PARAM_INT);
 
+
+echo  "<script>console.log('id=== $cmid');</script>";
+echo  "<script>console.log('id=== $forumid');</script>";
+
+//cmid讨论区id
 if (!$cmid && !$forumid) {
-    print_error('missingparameter');
+    print_error('输出的cmid或者forumid错误');
 }
 
 if ($cmid) {
     $forum = $forumvault->get_from_course_module_id($cmid);
     if (empty($forum)) {
-        throw new \moodle_exception('Unable to find forum with cmid ' . $cmid);
+        throw new \moodle_exception('找不到forumid: ' . $cmid);
     }
 } else {
     $forum = $forumvault->get_from_id($forumid);

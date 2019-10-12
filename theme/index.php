@@ -92,7 +92,6 @@ if (!empty($CFG->enabledevicedetection) && empty($device)) {
 
     $devices = core_useragent::get_device_type_list();
     foreach ($devices as $thedevice) {
-
         $headingthemename = ''; // To output the picked theme name when needed.
         $themename = core_useragent::get_device_type_theme($thedevice);
         if (!$themename && $thedevice == 'default') {
