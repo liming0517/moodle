@@ -55,6 +55,7 @@
         ]
     }
 }}
+
 <nav class="list-group" aria-label="{{firstcollectionlabel}}">
 {{# flatnavigation }}
     {{#showdivider}}
@@ -90,6 +91,7 @@
     </div>
     {{/action}}
 {{/ flatnavigation }}
+</nav>
     <!-- 评价库管理 -->
 <!--    <nav class="list-group mt-1" aria-label="nav-tiku">
         <a class="list-group-item list-group-item-action" href="http://192.168.111.23:8081/wiseschool/question/edit.php?courseid=7" >
@@ -149,7 +151,7 @@
 
 <!-- 电子档案 -->
 <nav class="list-group mt-1" aria-label="nav">
-    <a class="list-group-item list-group-item-action" href="http://192.168.111.23:8081/wiseschool/notice.php" >
+    <a class="list-group-item list-group-item-action" href="{{action}}" >
         <div class="ml-{{get_indent}}">
             <div class="media">
 

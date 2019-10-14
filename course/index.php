@@ -28,7 +28,6 @@ require_once($CFG->dirroot. '/course/lib.php');
 
 $categoryid = optional_param('categoryid', 0, PARAM_INT); // Category id
 $site = get_site();
-
 if ($CFG->forcelogin) {
     require_login();
 }
@@ -73,5 +72,10 @@ echo $content;
 $eventparams = array('context' => $PAGE->context, 'objectid' => $categoryid);
 $event = \core\event\course_category_viewed::create($eventparams);
 $event->trigger();
-
+/*隐藏该页面的设置按钮*/
+echo '<script type="application/javascript">
+        $(function() {
+          $(".dropdown").hide();
+        });
+</script>';
 echo $OUTPUT->footer();

@@ -251,15 +251,15 @@ $PAGE->set_heading($course->fullname);
 if ($notifyeditingon == -1) {//不是编辑模式
     //插入打开编辑模式按钮
     $USER->editing = 0;
-    echo "<div style='position: absolute;margin-left:58%;margin-top:220px;width: 200px;height: 50px' id='test'><a style='font-size: 25px' href=$CFG->wwwroot/course/view.php?id=$id&notifyeditingon=1>打开课程编辑</a></div>";
+    echo "<a href=$CFG->wwwroot/course/view.php?id=$id&notifyeditingon=1><div style='position: absolute;margin-left:59%;margin-top:220px;width: 127px;height: 49px;background: #009fe5;text-align: center;line-height: 49px' id='test'><p  style='font-size: 17px;color: white;'>打开课程编辑</p></div></a>";
 } else {
     //插入关闭编辑按钮
     $USER->editing = 1;
-    echo "<div style='position: absolute;margin-left:58%;margin-top:220px;width: 200px;height: 50px' id='test'><a style='font-size: 25px' href=$CFG->wwwroot/course/view.php?id=$id>关闭课程编辑</a></div>";
+    echo "<a href=$CFG->wwwroot/course/view.php?id=$id><div style='position: absolute;margin-left:59%;margin-top:220px;width: 127px;height: 49px;background: #009fe5;text-align: center;line-height: 49px' id='test'><p style='font-size: 17px;color: white;'>关闭课程编辑</p></div></a>";
 }
 
 //插入评价库管理功能
-echo "<div style='position: absolute;margin-left:72%;margin-top:220px;width: 200px;height: 50px' id='test'><a style='font-size: 25px' href=$CFG->wwwroot/question/edit.php?courseid=$id>评价库管理</a></div>";
+echo "<a href=$CFG->wwwroot/question/edit.php?courseid=$id><div style='position: absolute;margin-left:72%;margin-top:220px;width: 127px;height: 49px;background: #009fe5;text-align: center;line-height: 49px' id='test'><p style='font-size:17px;color: white;'>评价库管理</p></div></a>";
 
 
 echo $OUTPUT->header();
