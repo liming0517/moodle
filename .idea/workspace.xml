@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3911875e-4b13-467d-a2c5-5f9f46037693" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/course/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/course/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/course/view.php" beforeDir="false" afterPath="$PROJECT_DIR$/course/view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/theme/boost/templates/flat_navigation.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/theme/boost/templates/flat_navigation.mustache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/theme/klass/templates/footer.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/theme/klass/templates/footer.mustache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/search.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/search.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -81,7 +78,7 @@
     <configuration default="true" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" server_name="Unnamed">
       <method v="2" />
     </configuration>
-    <configuration name="calendar" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" server_name="testDebug" start_url="/wiseschool/course/view.php?id=5&amp;notifyeditingon=1">
+    <configuration name="calendar" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" server_name="testDebug" start_url="/wiseschool/admin/search.php">
       <method v="2" />
     </configuration>
     <configuration default="true" type="js.build_tools.grunt">
@@ -115,7 +112,7 @@
       <workItem from="1570771822031" duration="8131000" />
       <workItem from="1570784103073" duration="2010000" />
       <workItem from="1570840706293" duration="23444000" />
-      <workItem from="1571015146602" duration="11028000" />
+      <workItem from="1571015146602" duration="19666000" />
     </task>
     <servers />
   </component>
@@ -134,5 +131,12 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="PhpWebAppRunConfigurationType">
+        <watch expression="$node" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

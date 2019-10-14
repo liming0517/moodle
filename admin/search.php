@@ -80,9 +80,26 @@ if ($hassiteconfig) {
 
 if ($showsettingslinks) {
     $node = $PAGE->settingsnav->find('root', navigation_node::TYPE_SITE_ADMIN);
+    echo "<script type='application/javascript'>console.log('test= ".json_encode($node)."')</script>";
     if ($node) {
         echo $OUTPUT->render_from_template('core/settings_link_page', ['node' => $node]);
     }
 }
-
+/*使用script控制页面显示*/
+echo "<script type='application/javascript'> 
+    $(function() {
+      var array=$('.col-sm-3  h4  a');
+      for(var i=0;i<array.length;i++){
+          console.log($(array[i]).text());
+          //过滤不需要显示的模块
+          if('分析' == $(array[i]).text() || '能力' == $(array[i]).text() ||'勋章' == $(array[i]).text()||'消息' == $(array[i]).text() ||'用户' == $(array[i]).text()){
+              console.log('隐藏成功');
+               $(array[i]).parent().parent().parent().hide();
+               $(array[i]).parent().parent().parent().next().hide();
+          }
+          
+      }
+       
+    });
+      </script>";
 echo $OUTPUT->footer();
