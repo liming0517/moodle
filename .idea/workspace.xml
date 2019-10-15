@@ -4,6 +4,8 @@
     <list default="true" id="3911875e-4b13-467d-a2c5-5f9f46037693" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/search.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/search.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/templates/settings_link_page.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/lib/templates/settings_link_page.mustache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/theme/boost/templates/flat_navigation.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/theme/boost/templates/flat_navigation.mustache" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -112,7 +114,8 @@
       <workItem from="1570771822031" duration="8131000" />
       <workItem from="1570784103073" duration="2010000" />
       <workItem from="1570840706293" duration="23444000" />
-      <workItem from="1571015146602" duration="19666000" />
+      <workItem from="1571015146602" duration="20284000" />
+      <workItem from="1571103140893" duration="2506000" />
     </task>
     <servers />
   </component>

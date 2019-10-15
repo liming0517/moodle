@@ -85,6 +85,7 @@ if ($showsettingslinks) {
         echo $OUTPUT->render_from_template('core/settings_link_page', ['node' => $node]);
     }
 }
+
 /*使用script控制页面显示*/
 echo "<script type='application/javascript'> 
     $(function() {
@@ -102,4 +103,5 @@ echo "<script type='application/javascript'>
        
     });
       </script>";
+
 echo $OUTPUT->footer();
